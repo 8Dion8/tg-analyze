@@ -6,7 +6,7 @@ import numpy as np
 plt.style.use("./nord-dark-talk.mplstyle")
 
 
-with open("result.json", "r") as f:
+with open("result.json", "r", encoding='utf-8') as f:
     data = json.load(f)
 
 
