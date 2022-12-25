@@ -4,6 +4,10 @@ from datetime import datetime
 import numpy as np
 
 plt.style.use("./nord-dark-talk.mplstyle")
+plt.rc("xtick", labelsize=7)
+plt.rc('legend', fontsize=7)
+plt.rc('ytick', labelsize=7)
+plt.rc('font', size=7)
 
 
 with open("result.json", "r", encoding='utf-8') as f:
