@@ -1,5 +1,6 @@
 import json
 from matplotlib import pyplot as plt
+from matplotlib.animation import FuncAnimation
 from datetime import datetime
 from tqdm import tqdm
 
@@ -18,7 +19,7 @@ x0 = []
 for message in tqdm(messages0):
     time = message["date"] #     "2022-10-02T01:44:59"
     date = datetime.strptime(time, "%Y-%m-%dT%H:%M:%S")
-    day = date.minute
+    day = date.second
     if current_day != day:
         message_count0.append(current_message_count)
         current_day = day
@@ -52,7 +53,7 @@ x1 = []
 for message in tqdm(messages1):
     time = message["date"] #     "2022-10-02T01:44:59"
     date = datetime.strptime(time, "%Y-%m-%dT%H:%M:%S")
-    day = date.minute
+    day = date.second
     if current_day != day:
         message_count1.append(current_message_count)
         current_day = day
@@ -83,7 +84,7 @@ x2 = []
 for message in tqdm(messages2):
     time = message["date"] #     "2022-10-02T01:44:59"
     date = datetime.strptime(time, "%Y-%m-%dT%H:%M:%S")
-    day = date.minute
+    day = date.second
     if current_day != day:
         message_count2.append(current_message_count)
         current_day = day
@@ -98,7 +99,7 @@ for i in message_count2:
     cumul += i
     cumulative_count2.append(cumul)
 
-
+fig = plt.figure()
 
 
 plt.plot(x0, cumulative_count0, color="#98971a", label="Майя")
@@ -111,5 +112,7 @@ plt.plot(x2, cumulative_count2, color="#458588", label="Полина")
 plt.fill_between(x2, 0, cumulative_count2, alpha=.1, color="#458588")
 
 plt.legend()
+
+
 
 plt.show()

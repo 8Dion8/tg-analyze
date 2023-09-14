@@ -1,29 +1,20 @@
-# A dark Nord themed matplotlib style.
-# This style with larger elements, suitable for talks.
-#
-# Inspired by Seaborn whitegrid and the Nord theme:
-# https://www.nordtheme.com/
-# https://seaborn.pydata.org/
-#
-# GC
-#----------------------------------------------------------
 
 # Figure-wide
-figure.facecolor: 2e3440
+figure.facecolor: 333c43
 lines.linewidth: 2.5
 lines.solid_capstyle: round
 lines.markersize: 9
 patch.linewidth: 1.5
-patch.edgecolor: 434c5e
+patch.edgecolor: 555f66
 
 # Colors
-axes.prop_cycle: cycler('color', ['5e81ac', '88c0d0', 'd08770', 'bf616a', 'b48ead', 'a3be8c', 'ebcb8b', 'b7bfcc'])
+axes.prop_cycle: cycler('color', ['7fbbb3', 'a7c080', 'dbbc7f', 'e67e80', 'd699b6', '83c092', 'e69875'])
 image.cmap: magma
 
 # Axes
-axes.facecolor: 2e3440
-axes.edgecolor: 4c566a
-axes.labelcolor: d8dee9
+axes.facecolor: 333c43
+axes.edgecolor: 555f66
+axes.labelcolor: d3c6aa
 axes.axisbelow: True
 axes.grid: False
 axes.linewidth: 1.8
@@ -31,17 +22,17 @@ axes.titlelocation: left
 axes.titleweight: bold
 
 # Grid
-grid.color: 3b4252
+grid.color: 434f55
 grid.linestyle: -
 grid.linewidth: 1.5
 
 # Ticks
 xtick.direction: out
 ytick.direction: out
-xtick.color: 4c566a
-ytick.color: 4c566a
-xtick.labelcolor: d8dee9
-ytick.labelcolor: d8dee9
+xtick.color: 4d5960
+ytick.color: 4d5960
+xtick.labelcolor: d3c6aa
+ytick.labelcolor: d3c6aa
 xtick.major.width: 1.8
 ytick.major.width: 1.8
 xtick.minor.width: 1.5
@@ -52,7 +43,7 @@ xtick.minor.size: 4.0
 ytick.minor.size: 4.0
 
 # Font
-text.color: d8dee9
+text.color: d3c6aa
 font.family: sans-serif
 font.sans-serif: Myriad Pro, Gill Sans Nova, Gill Sans MT, Gill Sans, Helvetica, Arial, DejaVu Sans, Bitstream Vera Sans, sans-serif
 font.size: 16
